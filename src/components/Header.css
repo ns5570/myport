@@ -1,0 +1,134 @@
+/* Header CSS */
+
+/* Header Container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333; /* Set your preferred background color */
+  color: #fff; /* Set your preferred text color */
+}
+
+/* Header Title */
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  align-items: center;
+  margin-left: 5%;
+}
+
+/* Menu Button */
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.menu-bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff; /* Set your preferred color */
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-button.open .menu-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-button.open .menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.open .menu-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 10px 0;
+}
+/* Header.css */
+
+/* Style the horizontal list */
+.nav-list-horizontal {
+    display: flex;
+    list-style: none;
+    padding-left: -100px
+  }
+  
+  .nav-list-horizontal li {
+    margin-right: 20px; /* Adjust the spacing between list items */
+  }
+  
+  /* Additional styles as needed */
+  
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff; /* Set your preferred link color */
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+/* Light mode */
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.header.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Add styles for dark mode button */
+.dark-mode-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+  color: var(--text-color);
+}
+
+/* Add styles for the open menu */
+.header.open {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Add styles for your other header elements as needed */
+
+.nav-item a:hover {
+  color: #ff9900; /* Set your preferred hover color */
+}
